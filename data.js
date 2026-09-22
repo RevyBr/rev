@@ -1,4 +1,4 @@
-// --- DADOS ESTÁTICOS (NÃO TRADUZÍVEIS) ---
+    // --- DADOS ESTÁTICOS (NÃO TRADUZÍVEIS) ---
 const staticData = {
     socials: [
         { name: "Twitch",     user: "Reevbr",        url: "https://www.twitch.tv/reevbr",                  icon: "fab fa-twitch"    },
@@ -134,7 +134,6 @@ const staticData = {
         "imagens/gallery/gallery6.webp",
         "imagens/gallery/gallery7.webp",
         "imagens/gallery/gallery8.webp",
-        "imagens/gallery/gallery9.webp",
     ],
 
     menuIcons: {
