@@ -141,20 +141,20 @@ const staticData = {
         diagnostics: "fas fa-stethoscope"
     },
 
-    languageLevels: [ "100%", "60%", "30%" ],
+    languageLevels: [ "100%", "60%", "30%", "25%" ],
     featuredImage: "imagens/foco.webp",
 
     // label = fallback usado pelo renderProfile quando a tradução não fornece o label
     setup: [
-        { label: "CPU",       value: "AMD Ryzen 5 5600G",     icon: "cpu"        },
-        { label: "GPU",       value: "SONHO",                  icon: "gpu"        },
-        { label: "RAM",       value: "2x8GB DDR4 3200MHz",     icon: "ram"        },
-        { label: "Teclado",   value: "MACHENIKE K500 B61",     icon: "keyboard"   },
-        { label: "Mouse",     value: "LOGITECH G403 HERO",     icon: "mouse"      },
-        { label: "Headset",   value: "REDRAGON ZEUS X",        icon: "headset"    },
-        { label: "Microfone", value: "SONHO",                  icon: "microphone" },
-        { label: "Monitor",   value: "LG 22MP58VQ 75HZ",       icon: "monitor"    },
-        { label: "Mousepad",  value: "FORTREK SPEED LARGE",    icon: "mousepad"   },
+        { label: "CPU",       value: "Ryzen 5 5600G",     icon: "cpu"        },
+        { label: "GPU",       value: "Pendente",                  icon: "gpu"        },
+        { label: "RAM",       value: "2x8GB DDR4 3466MHz",     icon: "ram"        },
+        { label: "Teclado",   value: "T-Dagger BORA K313",     icon: "keyboard"   },
+        { label: "Mouse",     value: "Logitech G403 HERO",     icon: "mouse"      },
+        { label: "Headset",   value: "Redragon Zeus X",        icon: "headset"    },
+        { label: "Microfone", value: "Pendente",                  icon: "microphone" },
+        { label: "Monitor",   value: "LG 22MP58VQ",       icon: "monitor"    },
+        { label: "Mousepad",  value: "Fortrek Speed Large",    icon: "mousepad"   },
     ],
 };
 
@@ -164,14 +164,12 @@ const languageData = {
         profile: {
             title: "Painel de Dados: Rev",
             fields: [
-                { label: "Idade",       value: "18 Anos",   icon: "fa-birthday-cake" },
-                { label: "Gênero",      value: "Masculino", icon: "fa-venus-mars"    },
-                { label: "Sexualidade", value: "Hétero",    icon: "fa-heart"         },
+                { label: "Idade",       value: "19 Anos",   icon: "fa-birthday-cake" },
                 { label: "Localização", value: "Brasil",    icon: "fa-map-marker-alt"},
             ],
             directive: {
-                label: "Diretiva Principal",
-                value: "Oi, sou o Rev, amo ciência, tecnologia e jogos. Atualmente estou estudando, mas sempre arrumo tempo pra jogar."
+                label: "Introdução",
+                value: "Oi, me chamo Rev, amo ciência, tecnologia e jogos. Atualmente estou estudando, mas sempre arrumo tempo pra jogar."
             },
             socialsTitle: "Canais de Comunicação",
             featuredTitle: "Foco Atual",
@@ -180,7 +178,7 @@ const languageData = {
                 subtitle: "Sobrevivente de Raccoon City",
                 description: "Ah, sei lá... Só sobrevivendo."
             },
-            setupTitle: "Arsenal / Setup",
+            setupTitle: "Setup",
             setup: [
                 { label: "CPU"       },
                 { label: "GPU"       },
@@ -194,7 +192,7 @@ const languageData = {
             ]
         },
         affinities: {
-            title: "Logs de Dados: Afinidades",
+            title: "Afinidades",
             categories: [
                 { name: "Jogos"       },
                 { name: "Séries"      },
@@ -207,7 +205,7 @@ const languageData = {
             ]
         },
         records: {
-            title: "Registros Pessoais",
+            title: "Sobre Mim",
             items: [
                 "Faço aniversário em 24/09/2007",
                 "Prefiro jogos com narrativas profundas e que me toquem emocionalmente",
@@ -219,28 +217,28 @@ const languageData = {
                 "É difícil pra mim definir uma música favorita",
                 "Gosto de ler mangás, manhwas, livros",
                 "Odeio Funk, fanatismo político e NTR",
-                "Acho difícil lidar com pessoas fora do meu escopo social",
+                "Acho difícil lidar com pessoas fora do meu círculo social",
             ]
         },
-        gallery: { title: "Banco de Memória Visual" },
+        gallery: { title: "Mural" },
         diagnostics: { title: "Diagnóstico" },
         menu: {
             profile:     "Painel",
             affinities:  "Afinidades",
             records:     "Registros",
             gallery:     "Galeria",
-            diagnostics: "DIAGNÓSTICO",
         },
         status: {
             title: "Status do Sistema",
             chaos: "Entropia",
             connection: "Conexão",
             sync: "Última Sinc.",
-            languagesTitle: "Protocolos de Idioma",
+            languagesTitle: "Idiomas",
             languages: [
                 { name: "Português", label: "Nativo"       },
                 { name: "Inglês",    label: "Intermediário" },
                 { name: "Espanhol",  label: "Básico"       },
+                { name: "Japonês",  label: "Básico"       },
             ]
         }
     },
@@ -249,13 +247,11 @@ const languageData = {
         profile: {
             title: "Data Dashboard: Rev",
             fields: [
-                { label: "Age",        value: "18 Years",   icon: "fa-birthday-cake" },
-                { label: "Gender",     value: "Masculine",  icon: "fa-venus-mars"    },
-                { label: "Sexuality",  value: "Straight",   icon: "fa-heart"         },
+                { label: "Age",        value: "19 Years",   icon: "fa-birthday-cake" },
                 { label: "Location",   value: "Brazil",     icon: "fa-map-marker-alt"},
             ],
             directive: {
-                label: "Main Directive",
+                label: "Introduction",
                 value: "Hi, I'm Rev. I love science, technology, and gaming. I'm currently studying, but I always find time to play."
             },
             socialsTitle: "Communication Channels",
@@ -265,7 +261,7 @@ const languageData = {
                 subtitle: "Survivor of Raccoon City",
                 description: "Ah, I don't know... Just surviving."
             },
-            setupTitle: "Arsenal / Setup",
+            setupTitle: "Setup",
             setup: [
                 { label: "CPU"        },
                 { label: "GPU"        },
@@ -279,7 +275,7 @@ const languageData = {
             ]
         },
         affinities: {
-            title: "Data Logs: Affinities",
+            title: "Affinities",
             categories: [
                 { name: "Games"      },
                 { name: "Series"     },
@@ -292,7 +288,7 @@ const languageData = {
             ]
         },
         records: {
-            title: "Personal Logs",
+            title: "About Me",
             items: [
                 "My birthday is on September 24th, 2007.",
                 "I prefer games with deep narratives that hit me emotionally",
@@ -304,17 +300,15 @@ const languageData = {
                 "It's hard for me to define a favorite song.",
                 "I like reading manga, manhwa, and books.",
                 "I hate funk, political fanaticism, and NTR",
-                "I find it hard to deal with people outside my social scope",
+                "I find it hard to deal with people outside my group of friends",
             ]
         },
-        gallery: { title: "Visual Memory Bank" },
-        diagnostics: { title: "Diagnostics" },
+        gallery: { title: "Moodboard" },
         menu: {
             profile:     "Dashboard",
             affinities:  "Affinities",
             records:     "Records",
             gallery:     "Gallery",
-            diagnostics: "DIAGNOSTICS",
         },
         status: {
             title: "System Status",
@@ -326,6 +320,7 @@ const languageData = {
                 { name: "Portuguese", label: "Native"       },
                 { name: "English",    label: "Intermediate" },
                 { name: "Spanish",    label: "Basic"        },
+                { name: "Japanese",   label: "Basic"        },
             ]
         }
     },
@@ -335,12 +330,10 @@ const languageData = {
             title: "Panel de Datos: Rev",
             fields: [
                 { label: "Edad",        value: "18 Años",    icon: "fa-birthday-cake" },
-                { label: "Género",      value: "Masculino",  icon: "fa-venus-mars"    },
-                { label: "Sexualidad",  value: "Hetero",     icon: "fa-heart"         },
                 { label: "Ubicación",   value: "Brasil",     icon: "fa-map-marker-alt"},
             ],
             directive: {
-                label: "Directiva Principal",
+                label: "Introducción",
                 value: "Hola, soy Rev, me encanta la ciencia, la tecnología y los videojuegos. Actualmente estoy estudiando, pero siempre encuentro tiempo para jugar"
             },
             socialsTitle: "Canales de Comunicación",
@@ -350,7 +343,7 @@ const languageData = {
                 subtitle: "Sobreviviente de Raccoon City",
                 description: "Ah, no sé... Solo sobreviviendo."
             },
-            setupTitle: "Arsenal / Configuración",
+            setupTitle: "Configuración",
             setup: [
                 { label: "CPU"         },
                 { label: "GPU"         },
@@ -364,7 +357,7 @@ const languageData = {
             ]
         },
         affinities: {
-            title: "Registros de Datos: Afinidades",
+            title: "Afinidades",
             categories: [
                 { name: "Juegos"      },
                 { name: "Series"      },
@@ -377,7 +370,7 @@ const languageData = {
             ]
         },
         records: {
-            title: "Registros Personales",
+            title: "Acerca de mí",
             items: [
                 "Mi cumpleaños es el 24 de septiembre de 2007.",
                 "Prefiero juegos con narrativas profundas que me conmuevan emocionalmente",
@@ -392,14 +385,12 @@ const languageData = {
                 "Me resulta difícil lidiar con personas fuera de mi ámbito social",
             ]
         },
-        gallery: { title: "Banco de Memoria Visual" },
-        diagnostics: { title: "Diagnóstico" },
+        gallery: { title: "Mural" },
         menu: {
             profile:     "Panel",
             affinities:  "Afinidades",
             records:     "Registros",
             gallery:     "Galería",
-            diagnostics: "DIAGNÓSTICO",
         },
         status: {
             title: "Estado del Sistema",
@@ -411,6 +402,7 @@ const languageData = {
                 { name: "Portugués", label: "Nativo"      },
                 { name: "Inglés",    label: "Intermedio"  },
                 { name: "Español",   label: "Básico"      },
+                { name: "japonés",   label: "Básico"      },
             ]
         }
     },
@@ -420,13 +412,11 @@ const languageData = {
             title: "データダッシュボード: Rev",
             fields: [
                 { label: "年齢",           value: "18歳",     icon: "fa-birthday-cake" },
-                { label: "性別",           value: "男性的",    icon: "fa-venus-mars"    },
-                { label: "セクシュアリティ", value: "異性愛", icon: "fa-heart"         },
                 { label: "場所",           value: "ブラジル",  icon: "fa-map-marker-alt"},
             ],
             directive: {
-                label: "主な指令",
-                value: "「こんにちは、レヴです。科学、テクノロジー、そしてゲームが大好きです。現在は勉強中ですが、いつでもゲームをする時間を作っています。」"
+                label: "導入",
+                value:"「こんにちは、レヴです。科学、テクノロジー、そしてゲームが大好きです。現在は勉強中ですが、いつでもゲームをする時間を作っています。"
             },
             socialsTitle: "通信チャネル",
             featuredTitle: "現在の焦点",
@@ -435,7 +425,7 @@ const languageData = {
                 subtitle: "ラクーンシティの生存者",
                 description: "ただ生き延びてる."
             },
-            setupTitle: "アーセナル / セットアップ",
+            setupTitle: "デスク周り",
             setup: [
                 { label: "CPU"       },
                 { label: "GPU"       },
@@ -449,7 +439,7 @@ const languageData = {
             ]
         },
         affinities: {
-            title: "データログ：親和性",
+            title: "親和性",
             categories: [
                 { name: "ゲーム"     },
                 { name: "シリーズ"   },
@@ -462,7 +452,7 @@ const languageData = {
             ]
         },
         records: {
-            title: "個人的な記録",
+            title: "私について",
             items: [
                 "「誕生日は2007年9月24日です。」",
                 "感情に訴える深い物語のあるゲームが好きです",
@@ -477,14 +467,12 @@ const languageData = {
                 "自分の社会的な範囲外の人と接するのは難しい。",
             ]
         },
-        gallery: { title: "視覚的記憶バンク" },
-        diagnostics: { title: "診断" },
+        gallery: { title: "壁画" },
         menu: {
             profile:     "ダッシュボード",
             affinities:  "親和性",
             records:     "記録",
             gallery:     "ギャラリー",
-            diagnostics: "診断",
         },
         status: {
             title: "システムステータス",
@@ -496,6 +484,7 @@ const languageData = {
                 { name: "ポルトガル語", label: "ネイティブ" },
                 { name: "英語",        label: "中級"       },
                 { name: "スペイン語",  label: "初級"       },
+                { name: "日本語",  label: "初級"       },
             ]
         }
     }
