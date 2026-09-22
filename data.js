@@ -1,9 +1,6 @@
     // --- DADOS ESTÁTICOS (NÃO TRADUZÍVEIS) ---
 const staticData = {
     socials: [
-        { name: "Twitch",     user: "Reevbr",        url: "https://www.twitch.tv/reevbr",                  icon: "fab fa-twitch"    },
-        { name: "Twitter/X",  user: "Rev",            url: "https://x.com/MysticAleatorio",                 icon: "fab fa-x-twitter" },
-        { name: "GitHub",     user: "Revempt",        url: "https://github.com/RevyBr",                    icon: "fab fa-github"    },
         { name: "Steam",      user: "RevBr",          url: "https://steamcommunity.com/id/RevBr/",          icon: "fab fa-steam"     },
         { name: "Spotify",    user: "Rev",            url: "https://open.spotify.com/user/irafasz",         icon: "fab fa-spotify"   },
         { name: "Letterboxd", user: "RevBr",          url: "https://letterboxd.com/RevBr/",                 icon: "fas fa-ticket"    },
