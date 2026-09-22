@@ -276,14 +276,14 @@ function renderProfile(t) {
     `).join('');
 
     const directiveHtml = `
-        <div class="mt-4 lg:col-span-2 bg-gray-900/50 p-3 sm:p-4 border border-red-800/50">
+        <div class="mt-4 bg-gray-900/50 p-3 sm:p-4 border border-red-800/50">
             <p class="text-red-500 font-bold text-xs sm:text-sm uppercase tracking-widest">${t.directive.label}</p>
             <p class="text-gray-300 text-sm sm:text-lg mt-2" id="profile-field-directive"></p>
         </div>
     `;
 
     const socialsHtml = `
-    <div class="mt-4 lg:col-span-2 bg-gray-900/50 p-3 sm:p-4 border border-red-800/50">
+    <div class="mt-4 bg-gray-900/50 p-3 sm:p-4 border border-red-800/50">
         <p class="text-red-500 font-bold text-xs sm:text-sm uppercase tracking-widest mb-3 sm:mb-4">${t.socialsTitle}</p>
         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
             ${staticData.socials.map(social => `
@@ -306,10 +306,11 @@ function renderProfile(t) {
         </div>
     </div>`;
 
+    // SETUP: Adicionado flex-1 para expandir até a base da tela
     const setupHtml = `
-        <div class="mt-4 lg:col-span-2 bg-gray-900/50 p-3 sm:p-4 border border-red-800/50">
+        <div class="mt-4 bg-gray-900/50 p-3 sm:p-4 border border-red-800/50 flex-1 flex flex-col justify-between">
             <p class="text-red-500 font-bold text-xs sm:text-sm uppercase tracking-widest mb-3 sm:mb-4">${t.setupTitle}</p>
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 sm:gap-4 flex-1">
                 ${staticData.setup.map((item, index) => {
                     const translatedLabel = t.setup[index] && t.setup[index].label ? t.setup[index].label : item.label;
                     const iconSvg = PROFILE_SETUP_ICONS[item.icon] || PROFILE_SETUP_ICONS.cpu;
@@ -327,14 +328,15 @@ function renderProfile(t) {
         </div>
     `;
 
+    // FOCO ATUAL: Adicionado flex-1 e object-top para esticar o container e a imagem de forma proporcional
     const featuredHtml = `
-        <div class="w-full lg:w-1/3 flex-shrink-0 mt-4 lg:mt-0">
-            <div class="bg-gray-900/50 border border-red-800/50 h-full flex flex-col featured-card">
+        <div class="w-full lg:w-1/3 flex-shrink-0 mt-4 lg:mt-0 flex flex-col h-full">
+            <div class="bg-gray-900/50 border border-red-800/50 h-full flex flex-col featured-card flex-1">
                 <h3 class="text-lg sm:text-xl text-red-500 text-glow p-3 sm:p-4">${t.featuredTitle}</h3>
-                <div class="relative overflow-hidden flex-grow" style="min-height: 300px;">
-                   <img src="${staticData.featuredImage}" class="absolute inset-0 w-full h-full object-cover featured-image" alt="Featured Image"/>
-                   <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent"></div>
-                   <div class="absolute bottom-0 left-0 p-3 sm:p-4">
+                <div class="relative overflow-hidden flex-1 flex flex-col justify-end min-h-[300px]">
+                   <img src="${staticData.featuredImage}" class="absolute inset-0 w-full h-full object-cover object-top featured-image" alt="Featured Image"/>
+                   <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/30 to-transparent"></div>
+                   <div class="relative z-10 p-3 sm:p-4">
                         <h4 class="text-lg sm:text-2xl font-bold text-white">${t.featured.title}</h4>
                         <h5 class="text-sm sm:text-lg text-red-400">${t.featured.subtitle}</h5>
                         <p class="text-xs sm:text-base mt-2 text-gray-300">${t.featured.description}</p>
@@ -353,8 +355,8 @@ function renderProfile(t) {
         typeOutText(directiveEl, t.directive.value, 20);
     }, 10);
 
-    return `<div class="flex flex-col lg:flex-row gap-4">
-                <div class="w-full lg:w-2/3 flex flex-col">
+    return `<div class="flex flex-col lg:flex-row gap-4 h-full">
+                <div class="w-full lg:w-2/3 flex flex-col h-full">
                     <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4">${gridFieldsHtml}</div>
                     ${directiveHtml}
                     ${socialsHtml}
